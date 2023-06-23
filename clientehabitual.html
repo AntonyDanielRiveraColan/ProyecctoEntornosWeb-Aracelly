@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTE HABITUAL</title>
+    <link href="../css/estilos.css" rel="stylesheet">
+</head>
+
+<body onload="setMinDate()">
+    <div id="contPrincipal">
+        <header>
+            <a href="../paginas/INDEX.HTML">
+                <img class="img-header" src="../imagenes/logo.jpg" alt="Imagen no encontrada" width="30%" height="30%">
+            </a>
+
+            <div>
+                <img class="rs" src="../imagenes/ICONOS/compartir.png">
+                <img class="rs" src="../imagenes/ICONOS/twitter.png">
+                <img class="rs" src="../imagenes/ICONOS/youtube.png">
+            </div>
+        </header>
+
+        <nav>
+            <a href="../paginas/conocenos.html" >CONOCENOS</a>
+            <a href="../paginas/reservas.html">RESERVAS</a>
+            <a href="../paginas/servicios.html" >SERVICIOS</a>
+            <a href="../paginas/ubicanos.html" >UBÍCANOS</a>
+            <a href="../paginas/contactanos.html" >CONTÁCTANOS</a>
+        </nav>
+
+        <main>
+            <section>
+                <form id="formularioClienteHabitual" action="" method="POST" onsubmit="clienteHabitual(this)">
+                <div class="div-SECTION-clientehabitual">
+                    <H3 class="h3-section-clientehabitual">Formulario de reserva:</H3>
+                    <p class="p-section-clientehabitual">FECHA DE INGRESO:</p>
+                    <input id="fechaIngreso" class="date-section-clientehabitual" type="date" value="" required>
+                    <p class="p-section-clientehabitual">FECHA DE SALIDA:</p>
+                    <input id="fechaSalida" class="date-section-clientehabitual" type="date" value="">
+                    <p class="p-section-clientehabitual">RECOJO CON MOVILIDAD:</p>
+                    <select class="date-section-clientehabitual" name="select" id="movilidad">
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                    <p class="p-section-clientehabitual">DIRECCION DE RECOJO:</p>
+                    <input class="date-section-clientehabitual" type="text" value="">
+                    <p class="p-section-clientehabitual">NOMBRE DE LA MASCOTA:</p>
+                    <input class="date-section-clientehabitual" type="text" value="" name="nombreMascota" required>
+                    <P class="p-section-clientehabitual">¿QUIERES AGREGAR EL SERVICIO DE BAÑO PARA TU MASCOTA?</P>
+                    <select class="date-section-clientehabitual" name="select" id="movilidad">
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                    <p class="p-section-clientehabitual">CODIGO DE MEMBRESIA:</p>
+                    <input class="date-section-clientehabitual" type="text" value="" name="codigoMembresia"
+                        minlength="5" maxlength="5" required>
+                    <p class="p-section-clientehabitual">TELEFONO DE CONTACTO</p>
+                    <input class="date-section-clientehabitual" type="text" value=" " name="telefonoContacto"
+                        minlength="7" maxlength="9" required>
+                    <input type="submit" class="btnreservar-reserva" value="RESERVAR">
+                </div>
+                </form>
+            </section>
+            <FOOTER>
+                <hr class="hr1-footer-clientehabitual">
+                <div class="piedepag">
+                    <div>
+                        <img class="img-folder" src="../imagenes/maps.png">
+                        <br>
+                        <a href="https://goo.gl/maps/Rp7Dd7XBkoW1xBLG6" target="_blank">Hotel Marriogg</a>
+                    </div>
+                    <div>
+                        <h2>UBICACIÓN:</h2>
+                        <p>Encuentranos en:
+                            <br>
+                            Avenida Abancay 251<br>
+                            Lima 15001
+                        </p>
+                    </div>
+                </div>
+            </FOOTER>
+        </main>
+    </div>
+</body>
+
+</html>
+<script src="../javascript/hotel.js"></script>

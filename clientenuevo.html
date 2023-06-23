@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTE HABITUAL</title>
+    <link href="../css/estilos.css" rel="stylesheet">
+</head>
+
+<body onload="setMinDate()">
+    <div id="contPrincipal">
+        <header>
+            <a href="../paginas/INDEX.HTML">
+                <img class="img-header" src="../imagenes/logo.jpg" alt="Imagen no encontrada" width="30%" height="30%">
+            </a>
+
+            <div>
+                <img class="rs" src="../imagenes/ICONOS/compartir.png">
+                <img class="rs" src="../imagenes/ICONOS/twitter.png">
+                <img class="rs" src="../imagenes/ICONOS/youtube.png">
+            </div>
+        </header>
+
+        <nav>
+            <a href="../paginas/conocenos.html">CONOCENOS</a>
+            <a href="../paginas/reservas.html">RESERVAS</a>
+            <a href="../paginas/servicios.html">SERVICIOS</a>
+            <a href="../paginas/ubicanos.html">UBÍCANOS</a>
+            <a href="../paginas/contactanos.html">CONTÁCTANOS</a>
+        </nav>
+
+        <main>
+            <section>
+                <h1 class="h1-clientenuevo">REGISTROS CLIENTES NUEVOS</h1>
+                <h4>FORMULARIO DE RESERVA:</h4>
+
+                <form id="formularioClienteNuevo" action="" method="POST" onsubmit="clienteNuevoValidacion(this)">
+                    <div class="div1section-clientenuevo">
+                        <article>
+                            <p class="p-section-clientenuevo">FECHA DE INGRESO:</p>
+                            <input id="fechaIngreso" class="date-clientenuevo" type="date" value="" name="fechaIngreso" required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">FECHA DE SALIDA:</p>
+                            <input id="fechaSalida" class="date-clientenuevo" type="date" value="" name="fechaSalida">
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">RECOJO CON MOVILIDAD:</p>
+                            <select class="date-clientenuevo" name="select" id="movilidad">
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                        </article>
+                    </div>
+
+                    <h4 class="h4-clientenuevo">DATOS DE MASCOTA:</h4>
+                    <div class="div2section-clientenuevo">
+                        <article>
+                            <p class="p-section-clientenuevo">NOMBRE DE LA MASCOTA:</p>
+                            <input class="txt2-clientenuevo" type="text" value="" name="nombreMascota" required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">RAZA:</p>
+                            <input class="txt3-clientenuevo" type="text" value="" name="razaMascota" required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">EDAD:</p>
+                            <input class="txt4-clientenuevo" type="text" value="" name="edadMascota" minlength="1" maxlength="2" required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">VACUNAS:</p>
+                            <input class="txt2-clientenuevo" type="text" value="" name="vacunasMascota">
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">CLASE DE ALIMENTOS:</p>
+                            <input class="txt3-clientenuevo" type="text" value="" name="alimentosMascota">
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">RACIÓN:</p>
+                            <input class="txt4-clientenuevo" type="text" value="" name="racionMascota">
+                        </article>
+                    </div>
+
+                    <p class="p-section-clientenuevo">¿QUIERES AGREGAR EL SERVICIO DE BAÑO?:</p>
+                    <select class="date-clientenuevo" name="select" id="servicioBano">
+                        <option value="Si">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <h4 class="h4-clientenuevo">DATOS DE PROPIETARIO:</h4>
+                    <div class="div2section-clientenuevo">
+                        <article>
+                            <p class="p-section-clientenuevo">NOMBRES:</p>
+                            <input class="txt2-clientenuevo" type="text" value="" name="nombresPropietario" required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">APELLIDOS:</p>
+                            <input class="txt3-clientenuevo" type="text" value="" name="apellidosPropietario"required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">DNI:</p>
+                            <input class="txt4-clientenuevo" type="text" value="" maxlength="8" name="dniPropietario" minlength="8" maxlength="8"required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">DIRECCION:</p>
+                            <input class="txt2-clientenuevo" type="text" value="" name="direccionPropietario"required>
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">TELEFONO:</p>
+                            <input class="txt3-clientenuevo" type="text" value="" maxlength="8"
+                                name="telefonoPropietario" minlength="7" maxlength="9" required>
+                        </article>
+                    </div>
+
+                    <h4 class="h4-clientenuevo">DATOS DEL VETERINARIO:</h4>
+                    <div class="div2section-clientenuevo">
+                        <article>
+                            <p class="p-section-clientenuevo">NOMBRE DEL DOCTOR:</p>
+                            <input class="txt2-clientenuevo" type="text" value="" name="nombreVeterinario">
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">NOMBRE DE LA VETERINARIA:</p>
+                            <input class="txt3-clientenuevo" type="text" value="" name="nombreVeterinaria">
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">DIRECCION DE LA VETERINARIA:</p>
+                            <input class="txt2-clientenuevo" type="text" value="" name="direccionVeterinaria">
+                        </article>
+                        <article>
+                            <p class="p-section-clientenuevo">TELEFONO:</p>
+                            <input class="txt3-clientenuevo" type="text" value="" maxlength="8"
+                                name="telefonoVeterinaria">
+                        </article>
+                    </div>
+
+                    <input type="submit" class="btnregistrar-clientenuevo" value="REGISTRAR">
+                </form>
+            </section>
+
+            <footer>
+                <hr class="hr1-footer-clientenuevo">
+                <div class="piedepag">
+                    <div>
+                        <img class="img-folder" src="../imagenes/maps.png">
+                        <br>
+                        <a href="https://goo.gl/maps/Rp7Dd7XBkoW1xBLG6" target="_blank">Hotel Marriogg</a>
+                    </div>
+                    <div>
+                        <h2>UBICACIÓN:</h2>
+                        <p>Encuentranos en:
+                            <br>
+                            Avenida Abancay 251<br>
+                            Lima 15001
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
+<script src="../javascript/hotel.js"></script>
