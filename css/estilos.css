@@ -1,0 +1,577 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: white;
+}
+#contPrincipal {
+	width: 90%;
+	margin: 0 auto;
+	
+}
+
+/*header para todos*/
+header {
+	background-color: white;
+}
+.rs{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.img-header{
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+/*nav para todos*/
+nav {
+	background-color: rgb(197, 207, 252); 
+	width: 100%;
+	height: 20px;
+	display: grid;
+	grid-template-columns: repeat(5, 20%);
+}
+nav a {
+	text-decoration: none;
+	text-align:center;
+	color: black;
+	border: 1px;
+	border-style: solid;
+}
+
+/*section-INDEX*/
+.h1-section-index{
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.h12-section-index{
+	text-align: center;
+	width: auto;
+	margin-bottom: 60PX;
+	margin-top: 30px;
+}
+.h3-section-index{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.img1-section-index{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	height: 70%;
+}
+.img-section-index{
+	width: 80%;
+	height: 200px;
+	margin-bottom: 50px;
+	margin-left: 10%;
+	margin-right: auto;
+}
+.hr1-section-index {
+	height: 2px;
+  	width: 90%;
+ 	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 5%;
+}
+.hr2-section-index {
+	height: 2px;
+  	width: 90%;
+ 	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 5%;
+}
+.h3-section-index{
+	text-align: center;
+	margin: 5px;
+}
+.section1-index{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 2;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*section-CONOCENOS*/
+.section1-conocenos{
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	text-align: center;
+	
+}
+.h2-section-conocenos{
+	margin: 5px;
+	text-align: center;
+}
+.p1-section-conocenos{
+	text-align: justify;
+}
+
+.h1-section-conocenos{
+	margin-top: 30px;
+	text-align: center;
+	
+}
+.section2-conocenos{
+	width: 100%;
+	height: 100%;
+}
+.imgZ-section{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	height: 70%;
+}
+
+.section3-conocenos{
+	width: 100%;
+	height: 100%;
+}
+
+.imgTestimonios{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	height: 70%;
+}
+
+
+/*SECTION - SERVICIOS*/
+.img1-section-servicios{
+	width: 80%;
+	height: 200px;
+	margin-bottom: 50px;
+	margin-left: 10%;
+	margin-right: auto;
+}
+.h1-section-servicios{
+	margin-top: 20px;
+	text-align: center;
+}
+.hr1-section-servicios{
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+}
+.a1-section-servicios{
+	margin-inline: 25%;
+}
+.a2-section-servicios{
+	margin-inline: 43%;
+}.a3-section-servicios{
+	margin-inline: 33%;
+}.a4-section-servicios{
+	margin-inline: 25%;
+}
+
+.div1-section-servicios{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 2;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+/*SECTION - HOSPEDAJES Y GUARDERIA*/
+.h1-section-hospedajeyguarderia{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.div1-section-hospedajeyguarderia{
+	display: flex;
+	justify-content: center;
+}
+.img-section-hospedajeyguarderia{
+	width: 80%;
+	height: 400px;
+}
+.p1-section-hospedajeyguarderia{
+	text-align: justify;
+	width: 70%;
+	margin-left: 15%;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.p2-section-hospedajeyguarderia{
+	text-align: justify;
+	width: 70%;
+	margin-left: 15%;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.div2-section-hospedajeyguarderia{
+	margin-left: 10%;
+	width: 80%;
+	display: grid;
+	grid-template-rows: 2;
+	grid-template-columns: 1fr 1fr;
+}
+.img2-section-hospedajeyguarderia{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*SECTION - PASEOS*/
+.h1-section-paseo{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.div1-section-paseos{
+	text-align: justify;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2;
+}
+.img-section-paseos{
+	width: 100%;
+	height: 300px;
+}
+.div1-section-paseos article{
+	margin: 4%;
+	}
+.div1-section-paseos p{
+	font-size: 100%;
+
+}
+.hr1-section-paseo{
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+}
+
+
+/*SECTION - SESION DE FOTOS*/
+.img1-section-sesiondefotos{
+	width: 80%;
+	margin-left: 10%;
+}
+.p1-section-sesiondefotos{
+	margin-left: 10%;
+	width: 80%;
+	text-align: justify;
+}
+.h1-section-sesiondefotos{
+	text-align: center;
+	margin-top: 20px;
+}
+.hr1-section-sesiondefotos{
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+}
+
+
+/*SECTION - CUMPLEAÑOS*/
+#h1-section-cumpleaños{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+#img-section-cumpleanos{
+	height: 600px;
+}
+.p1-section-cumpleaños{
+	text-align: justify;
+	width: 70%;
+	margin-left: 15%;
+	font-size: 25px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-style: italic;
+	color: rgba(42, 40, 49, 0.932);
+}
+.hr1-footer-cumpleaños{
+
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+	
+}
+
+/*SECTION - CLIENTEHABITUAL*/
+
+.p-section-clientehabitual{
+	font-size: 14px;
+	margin-top: 20PX;
+}
+.h3-section-clientehabitual{
+	margin-top: 30px;
+}
+.div-SECTION-clientehabitual{
+	width: 80%;
+	margin-left: 10%;
+}
+.date-section-clientehabitual{
+	width: 20%;
+}
+.hr1-footer-clientehabitual{
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+}
+
+
+/*SECTION - CLIENTENUEVO.HTML*/
+
+.hr1-footer-clientenuevo{
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+}
+.p-section-clientenuevo{
+	font-size: 14px;
+	margin-top: 20PX;
+}
+
+
+/*SECTION - RESERVAS.HTML*/
+
+.img-reservas{
+	width: 100%;
+	height: 100%;
+	padding: auto;
+}
+.hr1-section-reservas {
+	height: 2px;
+  	width: 80%;
+ 	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 10%;
+}
+.hr2-section-reservas{
+	height: 2px;
+	width: 50%;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 25%;
+}
+.h1-section-reservas{
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+.btnreservar-reserva{
+	margin-bottom: 20px;
+	margin-left:55%;
+	margin-right: 20%;
+}
+.h3-section-reservas.html{
+	text-align: center;
+}
+.div1-reservas{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 3;
+	grid-template-columns:1fr 1fr 1fr;
+	text-align: center;
+}
+.div1-reservas p {
+	text-align: center;
+	font-size: 14px;
+}
+.btnEnviar-reservas{
+	font-size: 11px;
+	width: auto;
+	align-content: center;
+	margin-top: 20%;
+}
+
+
+/*SECTION - CLIENTENUEVO.HTML*/
+
+.btnregistrar-clientenuevo{
+	margin-top: 30PX;
+	margin-bottom: 20px;
+	margin-left:37%;
+	margin-right: 45%;
+}
+.h1-clientenuevo{
+	margin-top: 20PX;
+	text-align: center;
+}
+.div1section-clientenuevo{
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+}
+.div2section-clientenuevo{
+	display: grid;
+	grid-template-columns: 40% 38% 22%;
+}
+.date-clientenuevo{
+	width: 60%;
+}
+.txt2-clientenuevo{
+	width: 90%;
+}
+.txt3-clientenuevo{
+	width: 80%;
+}
+.txt4-clientenuevo{
+	width: 90%;
+}
+.text5-clientenuevo{
+	width: 36%;
+}
+.h4-clientenuevo{
+	margin-top: 40px;
+}
+
+/*SECTION - ubicanos*/
+.img-section-ubicanos{
+	margin-top: 20px;
+	width: 70%;
+	height: 400px;
+}
+.div1-section-ubicacion{
+	width: 80%;
+	margin-left: 10%;
+}
+.h2-section-ubicacion{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.div2-section-ubicacion p {
+	margin-top: 10px;
+}
+
+
+/*SECTION - CONTACTANOS*/
+.h3-section-contactanos{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-align: left;
+	font-size: 30px;
+}
+.p1-section-contactanos{
+	text-align: left;
+	font-size: 20px;
+}
+.hr1-section-contactanos{
+	height: 2px;
+	width: 80%;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 10%;
+}
+.hr2-section-contactanos{
+	height: 2px;
+	width: 70%;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 15%;
+}
+.h2-section-contactanos{
+
+	text-align: center;
+	margin-bottom: 10px;
+}
+.input1-section-contactanos{
+	margin-bottom: 20px;
+}
+.input2-section-contactanos{
+	margin-bottom: 20px;
+}
+.txt1-section-contactanos{
+	width: 400px;
+	height: 150px;
+}
+.input2-section-contactanos{
+	width: 15%;
+	height: 25px;
+	margin-top: 10px;
+}
+
+
+
+
+
+#logo {
+	transition: all 1s;
+  }
+  
+  #logo.animate {
+	transform: rotateY(360deg) ;
+  }
+
+  .colocaCursor {
+	background-color: rgb(105, 77, 170);
+	color: white;
+	font-size:large;
+	font-weight:bold
+}
+
+.retiraCursor {
+	background-color: rgb(197, 207, 252); 
+}
+
+.fondoColor {
+	background-color: rgb(19, 2, 59);
+	color: white;
+	font-size:large;
+	font-weight:bold
+}
+
+/*PIE DE PÁGINAS*/
+.pie{
+	
+	background: rgba(42, 92, 139, 0.932);
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.pie p{
+	color: white;
+	font-size: 18px;
+	font-style: italic;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.pie h2{
+	font-style: italic;
+	font-size: 22px;
+	color: rgba(42, 40, 49, 0.932);
+}
