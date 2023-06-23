@@ -34,7 +34,7 @@ function contactanosValidacion(formulario) {
   }
   
   //Funcion que limita la fecha minima de los calendarios en el dia actual
-  function setMinDate() {
+  function setMinDate(formulario) {
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -42,6 +42,7 @@ function contactanosValidacion(formulario) {
     var maxDate = yyyy + '-' + mm + '-' + dd;
     document.getElementById("fechaIngreso").setAttribute("min", maxDate);
     document.getElementById("fechaSalida").setAttribute("min", maxDate);
+	console.log("setMinDate() called");
   }
   
   //Funcion que valida la pagina clientenuevo.html

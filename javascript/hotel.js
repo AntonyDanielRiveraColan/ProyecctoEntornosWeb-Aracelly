@@ -28,12 +28,24 @@ function carrusel(){
     setTimeout("carrusel()",1000);
 }   
 
-document.body.setAttribute("onload","carrusel()");
+if (!(window.location.pathname.includes('clientenuevo.html') 
+	|| window.location.pathname.includes('clientehabitual.html')
+	|| window.location.pathname.includes('contactanos.html')
+	|| window.location.pathname.includes('cumpleanos.html')
+	|| window.location.pathname.includes('hospedajeyguarderia.html')
+	|| window.location.pathname.includes('paseos.html')
+	|| window.location.pathname.includes('reservas.html')
+	|| window.location.pathname.includes('servicios.html')
+	|| window.location.pathname.includes('sesiondefotos.html')
+	|| window.location.pathname.includes('ubicanos.html'))) {
+  document.body.setAttribute("onload", "carrusel()");
+}
+
 
 /*pag. cumpleaños*/
 
 function parpadear(){
-
+	
   let r = Math.floor(Math.random()*256);
   let g = Math.floor(Math.random()*256);
   let b = Math.floor(Math.random()*256);
@@ -43,14 +55,42 @@ function parpadear(){
   setTimeout('parpadear()',1000);
 }
 
-parpadear();
+if (!(window.location.pathname.includes('clientenuevo.html')
+	|| window.location.pathname.includes('clientehabitual.html')
+	|| window.location.pathname.includes('contactanos.html')
+	|| window.location.pathname.includes('conocenos.html')
+	|| window.location.pathname.includes('hospedajeyguarderia.html')
+	|| window.location.pathname.includes('INDEX.HTML')
+	|| window.location.pathname.includes('paseos.html')
+	|| window.location.pathname.includes('reservas.html')
+	|| window.location.pathname.includes('servicios.html')
+	|| window.location.pathname.includes('sesiondefotos.html')
+	|| window.location.pathname.includes('ubicanos.html'))) {
+    parpadear();
+  }
+
 
 function fade(){ 
   document.getElementById('img-section-cumpleaños').style.opacity = 0;  
   document.getElementById('img-section-cumpleaños').style.transition = 'all 1s';
   setTimeout('fadeOut()',2000);
 }
-fade();
+
+if (!(window.location.pathname.includes('clientenuevo.html')
+	|| window.location.pathname.includes('clientehabitual.html')
+	|| window.location.pathname.includes('contactanos.html')
+	|| window.location.pathname.includes('conocenos.html')
+	|| window.location.pathname.includes('cumpleanos.html')
+	|| window.location.pathname.includes('hospedajeyguarderia.html')
+	|| window.location.pathname.includes('INDEX.HTML')
+	|| window.location.pathname.includes('paseos.html')
+	|| window.location.pathname.includes('reservas.html')
+	|| window.location.pathname.includes('servicios.html')
+	|| window.location.pathname.includes('sesiondefotos.html')
+	|| window.location.pathname.includes('ubicanos.html'))) {
+    fade();
+  }
+
 
 function fadeOut(){ 
   document.getElementById('img-section-cumpleaños').style.opacity = 1;  

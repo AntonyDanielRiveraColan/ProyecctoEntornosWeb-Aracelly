@@ -8,7 +8,7 @@
 			<link href="../css/estilos.css" rel="stylesheet">
 		</head>
 			
-		<body>
+		<body onload="setMinDate()">
 			<div id="contPrincipal">
 				<header>
 					<a href="../paginas/INDEX.HTML">
@@ -23,21 +23,22 @@
 				</header>
 				
 				<nav>
-					<a class="menu" href="../paginas/conocenos.html" target="blank" id="conocenos" mn-name="conocenos">CONOCENOS</a>
-					<a class="menu" href="../paginas/reservas.html" target="blank" id="reservas" mn-name="reservas">RESERVAS</a>
-					<a class="menu" href="../paginas/servicios.html" target="blank" id="servicios" mn-name="servicios">SERVICIOS</a> 
-					<a class="menu" href="../paginas/ubicanos.html" target="blank" id="ubicanos" mn-name="ubicanos">UBÍCANOS</a> 
-					<a class="menu" href="../paginas/contactanos.html" target="blank" id="contactanos" mn-name="contactanos">CONTÁCTANOS</a>
+					<a class="menu" href="../paginas/conocenos.html" id="conocenos" mn-name="conocenos">CONOCENOS</a>
+					<a class="menu" href="../paginas/reservas.html" id="reservas" mn-name="reservas">RESERVAS</a>
+					<a class="menu" href="../paginas/servicios.html" id="servicios" mn-name="servicios">SERVICIOS</a> 
+					<a class="menu" href="../paginas/ubicanos.html" id="ubicanos" mn-name="ubicanos">UBÍCANOS</a> 
+					<a class="menu" href="../paginas/contactanos.html" id="contactanos" mn-name="contactanos">CONTÁCTANOS</a>
 				</nav>
 				
 				<main>
-                    <section>
-                        <div class="div-SECTION-clientehabitual">
+            <section>
+                <form id="formularioClienteHabitual" action="" method="POST" onsubmit="clienteHabitual(this)">
+                <div class="div-SECTION-clientehabitual">
                     <H3 class="h3-section-clientehabitual">Formulario de reserva:</H3>
                     <p class="p-section-clientehabitual">FECHA DE INGRESO:</p>
-                    <input class="date-section-clientehabitual" type="date" value="" >
+                    <input id="fechaIngreso" class="date-section-clientehabitual" type="date" value="" required>
                     <p class="p-section-clientehabitual">FECHA DE SALIDA:</p>
-                    <input class="date-section-clientehabitual" type="date" value="">
+                    <input id="fechaSalida" class="date-section-clientehabitual" type="date" value="">
                     <p class="p-section-clientehabitual">RECOJO CON MOVILIDAD:</p>
                     <select class="date-section-clientehabitual" name="select" id="movilidad">
                         <option value="Si">Sí</option>
@@ -46,19 +47,22 @@
                     <p class="p-section-clientehabitual">DIRECCION DE RECOJO:</p>
                     <input class="date-section-clientehabitual" type="text" value="">
                     <p class="p-section-clientehabitual">NOMBRE DE LA MASCOTA:</p>
-                    <input class="date-section-clientehabitual" type="text" value="" >
+                    <input class="date-section-clientehabitual" type="text" value="" name="nombreMascota" required>
                     <P class="p-section-clientehabitual">¿QUIERES AGREGAR EL SERVICIO DE BAÑO PARA TU MASCOTA?</P>
                     <select class="date-section-clientehabitual" name="select" id="movilidad">
                         <option value="Si">Sí</option>
                         <option value="No">No</option>
                     </select>
                     <p class="p-section-clientehabitual">CODIGO DE MEMBRESIA:</p>
-                    <input class="date-section-clientehabitual" type="text" value="">
+                    <input class="date-section-clientehabitual" type="text" value="" name="codigoMembresia"
+                        minlength="5" maxlength="5" required>
                     <p class="p-section-clientehabitual">TELEFONO DE CONTACTO</p>
-                    <input class="date-section-clientehabitual" type="text" value=" " >
-                    <input type="submit" class="btnreservar-reserva" value="RESERVAR">                   
-                </div>    
-                </section>
+                    <input class="date-section-clientehabitual" type="text" value=" " name="telefonoContacto"
+                        minlength="7" maxlength="9" required>
+                    <input type="submit" class="btnreservar-reserva" value="RESERVAR">
+                </div>
+                </form>
+            </section>
                 <footer>
                 <div class="pie">
                             <div class="datosPie">
